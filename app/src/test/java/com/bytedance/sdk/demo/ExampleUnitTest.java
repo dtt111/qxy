@@ -1,4 +1,4 @@
-package com.haihaihai.tiktoksample;
+package com.bytedance.sdk.demo;
 
 import org.junit.Test;
 
