@@ -1,6 +1,13 @@
 # qxy
 # 抖音极简版项目介绍
 
+ github的两个app？
+
+```
+名称为app的，是用来测试抖音sdk的测试
+名称为myapplication的，是我们自己的，包也是com.qxy.guanfang2
+```
+
 我们目前的进度 0%
 
 - 语言 java
