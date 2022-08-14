@@ -1,22 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--    上半顶部-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginBottom="-20dp"
-        android:background="@drawable/personal_page_bg"
-        >
+        android:background="@drawable/personal_page_bg">
+
     </LinearLayout>
+    <!--    下半白条-->
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/personal_page_bg_radius"
+<<<<<<< Updated upstream
         >
+=======
+        android:orientation="vertical">
+        <!--        获赞，关注，粉丝-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+            <!--            获赞-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/person_page_z_gz_fans">
+
+            </TextView>
+>>>>>>> Stashed changes
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="获赞"
+                android:textSize="@dimen/person_page_textsize"></TextView>
+            <!--            关注-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/person_page_z_gz_fans">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="关注"
+                android:textSize="@dimen/person_page_textsize"></TextView>
+            <!--            粉丝-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/person_page_z_gz_fans">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="粉丝"
+                android:textSize="@dimen/person_page_textsize"></TextView>
+        </LinearLayout>
+        <!--        个人简介-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="点击添加介绍,让大家认识你......"
+                android:textSize="@dimen/person_page_textsize"></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="polite"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/ic_baseline_create_24">
+
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/black_overlay"
+            android:text="+添加年龄、所在地标签"
+            android:textColor="#272727"
+            android:textSize="@dimen/person_page_textsize">
+
+        </TextView>
 
     </LinearLayout>
-
 </LinearLayout>
