@@ -18,11 +18,15 @@ public class ArtsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         //去掉顶部的标题
         getSupportActionBar().hide();
         //隐藏顶部栏
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+=======
+        //setContentView(R.layout.activity_main);
+>>>>>>> efecf07fdb00790fc8f95775a9d94445a34b6fd5
         setContentView(R.layout.activity_arts);
     }
 

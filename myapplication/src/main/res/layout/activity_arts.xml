@@ -40,7 +40,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="right"
+<<<<<<< HEAD
             android:layout_marginRight="15sp"
+=======
+>>>>>>> efecf07fdb00790fc8f95775a9d94445a34b6fd5
             android:text="榜单规则"
             android:textColor="@color/red" />
     </LinearLayout>
