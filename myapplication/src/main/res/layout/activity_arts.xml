@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".ArtsActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="150sp"
-        android:background="@color/teal_700"
+        android:background="@drawable/personal_page_bg"
         android:gravity="center"
         android:text="抖音综艺榜"
         android:textColor="@color/white"
@@ -39,9 +37,10 @@
             android:text="1月6日 12:00" />
 
         <TextView
-            android:layout_width="60sp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="135sp"
+            android:gravity="right"
+            android:layout_marginRight="15sp"
             android:text="榜单规则"
             android:textColor="@color/red" />
     </LinearLayout>
@@ -50,7 +49,7 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="145sp"
-        android:background="@color/white"
+        android:background="@drawable/personal_page_bg_radius"
         android:layout_marginTop="8sp"
         android:orientation="horizontal">
 
@@ -113,12 +112,13 @@
                     android:textSize="15sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_marginRight="15sp"
                     android:text="218.7万"
                     android:textColor="@color/gray"
-                    android:textSize="15sp"
-                    android:paddingLeft="120sp"/>
+                    android:textSize="15sp"/>
             </LinearLayout>
         </LinearLayout>
 
