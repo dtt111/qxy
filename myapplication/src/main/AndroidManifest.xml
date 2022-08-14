@@ -16,7 +16,7 @@
         <!--            android:exported="false"-->
         <!--            android:label="@string/title_activity_personal_page"-->
         <!--            android:theme="@style/Theme.Qxy.Fullscreen" />-->
-    <activity android:name=".ArtsActivity"
+    <activity android:name=".personal_page"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN"/>
