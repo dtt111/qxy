@@ -17,9 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/personal_page_bg_radius"
-<<<<<<< Updated upstream
-        >
-=======
         android:orientation="vertical">
         <!--        获赞，关注，粉丝-->
         <LinearLayout
@@ -36,14 +33,14 @@
                 android:textSize="@dimen/person_page_z_gz_fans">
 
             </TextView>
->>>>>>> Stashed changes
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="获赞"
-                android:textSize="@dimen/person_page_textsize"></TextView>
+                android:textSize="@dimen/person_page_textsize">
+
+            </TextView>
             <!--            关注-->
             <TextView
                 android:layout_width="wrap_content"
@@ -60,7 +57,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="关注"
-                android:textSize="@dimen/person_page_textsize"></TextView>
+                android:textSize="@dimen/person_page_textsize">
+
+            </TextView>
             <!--            粉丝-->
             <TextView
                 android:layout_width="wrap_content"

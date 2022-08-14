@@ -11,11 +11,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 
-public class ArtsActivity extends Activity {
+public class ArtsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_arts);
     }
 
     @Override
