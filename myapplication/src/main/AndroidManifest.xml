@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Qxy">
+<!--        <activity-->
+<!--            android:name=".personal_page"-->
+<!--            android:configChanges="orientation|keyboardHidden|screenSize"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_personal_page"-->
+<!--            android:theme="@style/Theme.Qxy.Fullscreen" />-->
         <activity
-            android:name=".MainActivity"
+            android:name=".personal_page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

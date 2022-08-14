@@ -11,7 +11,7 @@
 我们目前的进度 0%
 
 - 语言 java
-- 安卓版本 lollipop 5.0
+- 安卓版本 lollipop 5.0 API21
 -  okhttp
 -  数据库room
 -  项目框架mvvm
