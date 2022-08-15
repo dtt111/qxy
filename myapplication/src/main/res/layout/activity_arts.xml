@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--    想要实现返回和转发压在综艺榜几个字的上面   -->
+    <!--    实现返回和转发压在综艺榜几个字的上面   -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,10 +26,10 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="25sp"
-            android:orientation="horizontal"
+            android:layout_marginLeft="15sp"
             android:layout_marginTop="10sp"
             android:layout_marginRight="15sp"
-            android:layout_marginLeft="15sp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/back"
@@ -47,6 +47,7 @@
 
         </RelativeLayout>
     </FrameLayout>
+
     <!--更新时间与榜单规则按钮-->
     <LinearLayout
         android:id="@+id/time"
@@ -76,7 +77,6 @@
             android:text="榜单规则"
             android:textColor="@color/red" />
     </LinearLayout>
-
     <!--    内容盒子-->
     <LinearLayout
         android:id="@+id/list"
