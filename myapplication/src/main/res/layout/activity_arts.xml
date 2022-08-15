@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--    想要实现返回和转发压在综艺榜几个字的上面，但是不知道怎么实现-->
+    <!--    想要实现返回和转发压在综艺榜几个字的上面   -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
