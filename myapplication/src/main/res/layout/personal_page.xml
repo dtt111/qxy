@@ -4,13 +4,70 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <!--    上半顶部-->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="230dp"
         android:layout_marginBottom="-20dp"
         android:background="@drawable/personal_page_bg">
+        <RelativeLayout
+            android:id="@+id/rl_personal_photo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/personal_photo_main">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/personal_photo_circle">
 
-    </LinearLayout>
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleY="0.5"
+                android:scaleX="0.5"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_photo_camera_24">
+
+            </ImageView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toEndOf="@+id/rl_personal_photo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/tv_personal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击填写名字">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv_tiktok_num"
+                android:layout_below="@+id/tv_personal_name"
+                android:layout_width="wrap_content"
+                android:text="抖音号：10201010"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_below="@+id/tv_tiktok_num"
+                android:layout_width="wrap_content"
+                android:background="#f1f1f1"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="+心情">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
     <!--    下半白条-->
     <LinearLayout
 
@@ -148,6 +205,7 @@
                 </TextView>
                 <TextView
                     android:text="美好生活触手可得"
+                    android:textColor="@color/textcolor"
                     android:gravity="bottom"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -170,24 +228,26 @@
             </TextView>
 
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
                 android:layout_height="match_parent"
                 android:layout_toStartOf="@+id/tv_center_block"
                 android:background="#f1f1f1"
                 android:gravity="center"
-                android:textColor="@color/textcolor"
-                android:text="编辑资料 10%">
+                android:text="编辑资料 10%"
+                android:textColor="@color/textcolor">
 
             </TextView>
 
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
                 android:layout_height="match_parent"
                 android:layout_toEndOf="@+id/tv_center_block"
                 android:background="#f1f1f1"
                 android:gravity="center"
-                android:textColor="@color/textcolor"
-                android:text="添加好友">
+                android:text="添加好友"
+                android:textColor="@color/textcolor">
 
             </TextView>
         </RelativeLayout>
