@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="match_parent"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/title"
+    <!--    想要实现返回和转发压在综艺榜几个字的上面，但是不知道怎么实现-->
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="150sp"
-        android:background="@drawable/personal_page_bg"
-        android:gravity="center"
-        android:text="抖音综艺榜"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <!--抖音综艺榜的那几个字及背景-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:background="@drawable/personal_page_bg"
+            android:gravity="center"
+            android:text="抖音综艺榜"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+        <!--返回与转发按钮-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="15sp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/turn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitEnd"
+                android:src="@drawable/turn" />
+
+        </RelativeLayout>
+    </FrameLayout>
+    <!--更新时间与榜单规则按钮-->
     <LinearLayout
         android:id="@+id/time"
         android:layout_width="match_parent"
@@ -39,20 +71,21 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="right"
             android:layout_marginRight="15sp"
+            android:gravity="right"
             android:text="榜单规则"
             android:textColor="@color/red" />
     </LinearLayout>
 
+    <!--    内容盒子-->
     <LinearLayout
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="145sp"
-        android:background="@drawable/personal_page_bg_radius"
         android:layout_marginTop="8sp"
+        android:background="@drawable/personal_page_bg_radius"
         android:orientation="horizontal">
-
+        <!--内容图片-->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -63,7 +96,7 @@
             android:scaleType="fitXY"
             android:src="@drawable/ic_launcher_background"
             tools:ignore="Suspicious0dp" />
-
+        <!--内容文字部分-->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -75,12 +108,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:layout_weight="1"
                 android:layout_marginBottom="10sp"
+                android:layout_weight="1"
                 android:text="乘风破浪 第三季"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -114,11 +147,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="right"
                     android:layout_marginRight="15sp"
+                    android:gravity="right"
                     android:text="218.7万"
                     android:textColor="@color/gray"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
             </LinearLayout>
         </LinearLayout>
 
